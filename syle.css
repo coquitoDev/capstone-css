@@ -1,0 +1,273 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    color: #ffff;
+}
+
+h1 {
+    font-family: 'Crimson Text', serif;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+}
+
+
+
+
+.hero-section{
+    background-color: #475350;
+    
+}
+
+.flex-container{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text-hero{
+    margin-left: 50px;
+}
+
+.skill-section{
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+}
+
+.introduction{ 
+    margin-right: 80px;
+    width: 550px;
+    height: 500px;
+    border-radius: 50%;    
+    background-color: #677E87;    
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.introduction h2{
+    margin: 20px 0;
+    font-size: 2rem;
+}
+
+.introduction p {
+    padding: 0 2em;
+}
+
+
+.container-cards{
+    margin-top: 20px;
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-bottom: 15px;   
+}
+
+.item-card h3 {
+    color: #60A3BE;
+    font-weight: bolder;
+    padding: 12px 0 ;
+}
+
+.item-css{
+    align-self: flex-end;
+}
+
+
+
+.wrap-container{
+    position: relative;
+}
+
+.lock{
+    position: absolute;
+    left: 64px;
+}
+
+
+.about-me{
+    margin-top: 7rem;
+}
+
+.grid-container{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.grid-container h3 {
+    font-family:'Crimson Text', serif;
+    font-size: 2rem;
+    
+}
+
+.grid-container li {
+    padding: 15px 0;
+    list-style-type: none;
+}
+
+.education{    
+    background-color: #613F3B;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.goals{
+    background-color: #677E87;    
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hobbies{
+    background-color: #475350;
+    padding: 30px;
+}
+
+
+.item-about-me{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  15px 0;
+}
+
+.item-about-me img {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    object-fit: fill;
+    height: 80px;
+    width: 80px;   
+
+}
+
+.footer{
+    background-color: #87676C;
+    margin-top: 1rem;
+    padding: 2rem 0;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media a {
+    padding: 0 .5rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.social-media a:hover{
+    color: #613F3B;
+}
+
+
+
+
+@media (max-width: 790px){
+    .hero-section{
+        height: 100vh;
+        padding-bottom: 80px;
+    }
+    .skill-section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item-card{
+        margin-bottom: 3rem;
+    }
+
+
+    .item-css{
+        align-self: center;
+    }
+
+    .introduction{
+        margin: 10px 10px;
+    }
+}
+
+
+
+
+@media (max-width: 680px) {
+
+    .flex-container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        }
+
+    .skill-section{
+        margin-top: 50px;
+    }
+
+    .introduction{
+        margin: 0;
+        width: 100%;
+        
+    }
+
+    .lock{
+        left:50px;
+    }
+
+    .about-me{
+        margin: 10px;
+    }
+}
+
+
+
+
+
+
+
+@media (min-width: 530px) {
+    .hobbies{
+        grid-area: 2 / 1 / 2/ 3;
+    }
+}
+
+@media (min-width: 790px) {
+    .education{
+        grid-area: 1 / 1 / 1 / 2;
+    }
+    
+    .goals{
+        grid-area: 2 / 1 / 2 / 2;
+    }
+
+    .hobbies{
+        grid-area: 1 / 2 / 3 / 3;
+    }
+}
+
+
+
